@@ -9,7 +9,7 @@ but i wanted something easy to remember and to use with other projects
 
 List all text files of current directory recursivelly and their line count
 ```
-lc
+lc.sh
 /home/kpatronas/work/router/input/a_01102001.csv 190
 /home/kpatronas/work/router/input/a_29072001.csv 225
 /home/kpatronas/work/router/input/a_17092001.csv 677
@@ -21,13 +21,13 @@ lc
 
 List all text files of current directory recursivelly and their line count where their filename starts with b_
 ```
-lc -p "b_*"
+lc.sh -p "b_*"
 /home/kpatronas/work/router/input/b_17032001.csv 5000
 ```
 
 List all text files of current directory recursivelly and their line count where their filename starts with b_ and the source directory is /home/kpatronas
 ```
-lc -p "b_*" -w /home/kpatronas
+lc.sh -p "b_*" -w /home/kpatronas
 /home/kpatronas/b_17032001.csv 5000
 /home/kpatronas/work/router/input/b_17032001.csv 5000
 .
@@ -36,6 +36,6 @@ lc -p "b_*" -w /home/kpatronas
 
 List all text files of current directory recursivelly and their line count where their filename starts with b_ and the source directory is /home/kpatronas but dont go recursive
 ```
-lc -p "b_*" -w /home/kpatronas -r 1
+lc.sh -p "b_*" -w /home/kpatronas -r 1
 /home/kpatronas/b_17032001.csv 5000
 ```
